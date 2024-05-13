@@ -41,7 +41,11 @@
 </header>
 
 <main class="grid grid-cols-12 text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<div class="col-span-12 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white">
+	<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10  md:px-4">
+		<Intro {...intro} />
+	</div>
+	
+	<div class="col-span-12 md:row-span-2 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white">
 		
 		<!-- TODO: Add skills here -->
 		<section>
@@ -61,8 +65,7 @@
 			</Hideable>
 		</section>
 	</div>
-<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10  md:px-4">
-	<Intro {...intro} />
+<div class="col-span-12 md:col-start-1 md:col-end-10 md:px-4">
 	
 
 	<section>
