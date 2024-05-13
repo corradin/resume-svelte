@@ -40,25 +40,30 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="grid text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+<main class="grid grid-cols-12 text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+	<div class="col-span-12 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white">
+		
+		<!-- TODO: Add skills here -->
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
+				<hr />
+				<ul class="text-left list-disc pl-8">
+					{#each technologies as tech}
+						<Hideable>
+							<li>
+								<span class="w-28 inline-block">{tech.section}</span>
+								<span>{tech.details}</span>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+	</div>
+<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10  md:px-4">
 	<Intro {...intro} />
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
-			<hr />
-			<ul class="text-left list-disc pl-8">
-				{#each technologies as tech}
-					<Hideable>
-						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
-							<span>{tech.details}</span>
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
+	
 
 	<section>
 		<Hideable>
@@ -125,6 +130,7 @@
 			</ul>
 		</Hideable>
 	</section>
+</div>
 
 	<footer class="print-only">
 		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
