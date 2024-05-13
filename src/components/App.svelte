@@ -40,7 +40,7 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+<main class="grid text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
 	<Intro {...intro} />
 
 	<section>
