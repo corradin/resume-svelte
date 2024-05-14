@@ -46,8 +46,11 @@
 	</div>
 	
 	<div class="col-span-12 md:row-span-2 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white">
-		
-		<!-- TODO: Add skills here -->
+		<section>
+			<Hideable>
+				<img src="/images/profile_2023.jpg" alt="Profile" class="rounded-full w-32 h-32 mx-auto my-4" />
+			</Hideable>
+		</section>
 		<section>
 			<Hideable>
 				<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
