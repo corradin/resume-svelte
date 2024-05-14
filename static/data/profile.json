@@ -99,6 +99,12 @@
 			"details": "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare"
 		}
 	],
+	"achievements": [
+		{
+			"title": "an achievement",
+			"description": "I did something cool and got a reward for it!"
+		}
+	],
 	"workExperiences": [
 		{
 			"position": "Full-stack Developer, Co-founder",
@@ -188,7 +194,7 @@
 		"Pets : I have 3 dogs"
 	],
 	"resumeUrl": {
-		"sourceLink": "https://github.com/narze/resume",
+		"sourceLink": "https://github.com/corradin/resume-svelte",
 		"fullVersion": "https://resume.narze.live"
 	}
 }

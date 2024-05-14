@@ -11,6 +11,7 @@
 	$: ({
 		intro = {} as IProfileResp['intro'],
 		projects = [],
+		achievements = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
@@ -53,7 +54,23 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Technologies and Languages</h2>
+				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Achievements</h2>
+				<hr />
+				<ul class="text-left list-disc pl-8">
+					{#each achievements as achievement}
+						<Hideable>
+							<li>
+								<span class="w-28 inline-block">{achievement.title}</span>
+								<span>{achievement.description}</span>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Tech Skills</h2>
 				<hr />
 				<ul class="text-left list-disc pl-8">
 					{#each technologies as tech}
@@ -154,7 +171,7 @@
 	}
 
 	section {
-		@apply my-4;
+		@apply my-8;
 	}
 
 	section h2 {

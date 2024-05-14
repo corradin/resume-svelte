@@ -1,6 +1,7 @@
 export interface IProfileResp {
 	intro: IIntro;
 	projects: IProject[];
+	achievements: Achievement[];
 	technologies: ITechnology[];
 	workExperiences: IWorkExperience[];
 	educations: IEducation[];
@@ -45,3 +46,9 @@ export interface IEducation {
 	head: string;
 	details: string;
 }
+
+export type Achievement = {
+	title: string;
+	description: string;
+	icon?: string;
+};
