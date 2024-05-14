@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
+	import Icon from '@iconify/svelte';
 	import Intro from './Intro.svelte';
 	import Work from './Work.svelte';
 
@@ -42,14 +43,20 @@
 </header>
 
 <main class="grid grid-cols-12 text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10  md:px-4">
+	<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10 md:px-4">
 		<Intro {...intro} />
 	</div>
-	
-	<div class="col-span-12 md:row-span-2 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white">
+
+	<div
+		class="col-span-12 md:row-span-2 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white"
+	>
 		<section>
 			<Hideable>
-				<img src="/images/profile_2023.jpg" alt="Profile" class="rounded-full w-32 h-32 mx-auto my-8" />
+				<img
+					src="/images/profile_2023.jpg"
+					alt="Profile"
+					class="rounded-full w-32 h-32 mx-auto my-8"
+				/>
 			</Hideable>
 		</section>
 		<section>
@@ -60,6 +67,7 @@
 					{#each achievements as achievement}
 						<Hideable>
 							<li class="list-none">
+								<Icon icon="healthicons:i-training-class" width="2rem" />
 								<div class="font-bold text-lg mb-1">{achievement.title}</div>
 								<div>{achievement.description}</div>
 							</li>
@@ -85,75 +93,73 @@
 			</Hideable>
 		</section>
 	</div>
-<div class="col-span-12 md:col-start-1 md:col-end-10 md:px-4">
-	
+	<div class="col-span-12 md:col-start-1 md:col-end-10 md:px-4">
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+				<hr />
 
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
-			<hr />
+				<ul class="text-left list-disc pl-8">
+					{#each educations as edu}
+						<Hideable>
+							<li>
+								<strong>{edu.head}</strong>, {edu.details}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
 
-			<ul class="text-left list-disc pl-8">
-				{#each educations as edu}
-					<Hideable>
-						<li>
-							<strong>{edu.head}</strong>, {edu.details}
-						</li>
-					</Hideable>
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+				<hr />
+
+				{#each workExperiences as exp}
+					<Work {...exp} />
 				{/each}
-			</ul>
-		</Hideable>
-	</section>
+			</Hideable>
+		</section>
 
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
-			<hr />
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
+				<hr />
 
-			{#each workExperiences as exp}
-				<Work {...exp} />
-			{/each}
-		</Hideable>
-	</section>
+				<ul class="text-left list-disc pl-8">
+					{#each projects as project}
+						<Hideable hide={project.hide}>
+							<li>
+								<strong>{project.name}</strong>
+								- {project.details}
+								<a href="https://{project.url}" target="_blank" rel="noreferrer"
+									><strong>{project.url}</strong></a
+								>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
 
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
-			<hr />
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+				<hr />
 
-			<ul class="text-left list-disc pl-8">
-				{#each projects as project}
-					<Hideable hide={project.hide}>
-						<li>
-							<strong>{project.name}</strong>
-							- {project.details}
-							<a href="https://{project.url}" target="_blank" rel="noreferrer"
-								><strong>{project.url}</strong></a
-							>
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
-
-	<section>
-		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
-			<hr />
-
-			<ul class="text-left list-disc pl-8">
-				{#each interests as interest}
-					<Hideable>
-						<li>
-							{interest}
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
-		</Hideable>
-	</section>
-</div>
+				<ul class="text-left list-disc pl-8">
+					{#each interests as interest}
+						<Hideable>
+							<li>
+								{interest}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+	</div>
 
 	<footer class="print-only">
 		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
