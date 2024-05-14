@@ -56,12 +56,12 @@
 			<Hideable>
 				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Achievements</h2>
 				<hr />
-				<ul class="text-left list-disc pl-8">
+				<ul class="text-left">
 					{#each achievements as achievement}
 						<Hideable>
-							<li>
-								<span class="w-28 inline-block">{achievement.title}</span>
-								<span>{achievement.description}</span>
+							<li class="list-none">
+								<div class="font-bold text-lg mb-1">{achievement.title}</div>
+								<div>{achievement.description}</div>
 							</li>
 						</Hideable>
 					{/each}
