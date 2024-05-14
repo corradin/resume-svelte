@@ -39,3 +39,5 @@ You can preview the production build with `npm run preview`.
 
 ## TODO
 [ ] Look at examples from [EhanceCV](https://app.enhancv.com/resume/new?example=template-elegant&color=008CFF,22405C&fromLanding=true) or this one: https://app.enhancv.com/resume/new?example=template-polished&color=1AB0B3,006666&fromLanding=true
+
+More [Tips](https://enhancv.com/resume-examples/software-engineer/#)
