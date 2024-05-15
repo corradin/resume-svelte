@@ -68,8 +68,8 @@
 						<Hideable>
 							<li class="list-none grid grid-cols-6">
 								<Icon class="mt-1 row-span-2" icon="healthicons:i-training-class" width="2rem" />
-								<div class="font-bold text-lg mb-1 col-span-5">{achievement.title}</div>
-								<div class="col-span-5">{achievement.description}</div>
+								<div class="font-bold mb-2 col-span-5">{achievement.title}</div>
+								<div class="col-span-5 text-sm mb-4">{achievement.description}</div>
 							</li>
 						</Hideable>
 					{/each}
@@ -80,12 +80,12 @@
 			<Hideable>
 				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Tech Skills</h2>
 				<hr />
-				<ul class="text-left list-disc pl-8">
+				<ul class="text-left list-disc pl-1">
 					{#each technologies as tech}
 						<Hideable>
-							<li>
-								<span class="w-28 inline-block">{tech.section}</span>
-								<span>{tech.details}</span>
+							<li class="list-none">
+								<div class="font-bold mb-2">{tech.section}</div>
+								<div class="text-sm mb-4">{tech.details}</div>
 							</li>
 						</Hideable>
 					{/each}
