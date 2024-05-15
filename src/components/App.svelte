@@ -66,10 +66,10 @@
 				<ul class="text-left">
 					{#each achievements as achievement}
 						<Hideable>
-							<li class="list-none">
-								<Icon icon="healthicons:i-training-class" width="2rem" />
-								<div class="font-bold text-lg mb-1">{achievement.title}</div>
-								<div>{achievement.description}</div>
+							<li class="list-none grid grid-cols-6">
+								<Icon class="mt-1 row-span-2" icon="healthicons:i-training-class" width="2rem" />
+								<div class="font-bold text-lg mb-1 col-span-5">{achievement.title}</div>
+								<div class="col-span-5">{achievement.description}</div>
 							</li>
 						</Hideable>
 					{/each}
