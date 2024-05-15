@@ -42,13 +42,13 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="grid grid-cols-12 text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<div class="col-span-12 md:row-start-1 md:col-start-1 md:col-end-10 md:px-4">
+<main class="grid grid-cols-12 text-center m-0  md:p-4 md:m-8 xl:mx-auto max-w-screen-xl">
+	<div class="col-span-12 sm:row-start-1 sm:col-start-1 sm:col-end-10 sm:px-4">
 		<Intro {...intro} />
 	</div>
 
 	<div
-		class="col-span-12 md:row-span-2 md:col-start-10 md:col-end-13 md:px-4 md:bg-indigo-800 md:text-white"
+		class="col-span-12 sm:row-span-2 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-indigo-800 sm:text-white"
 	>
 		<section>
 			<Hideable>
@@ -61,13 +61,13 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-2xl print:text-4xl my-2 uppercase text-left">Achievements</h2>
+				<h2 class="md:text-2xl print:text-2xl my-2 uppercase text-left">Achievements</h2>
 				<hr />
 				<ul class="text-left">
 					{#each achievements as achievement}
 						<Hideable>
 							<li class="list-none grid grid-cols-6">
-								<Icon class="mt-1 row-span-2" icon="healthicons:i-training-class" width="2rem" />
+								<Icon class="mt-1 row-span-2" icon="healthicons:i-training-class" width="1.5rem" />
 								<div class="font-bold mb-2 col-span-5">{achievement.title}</div>
 								<div class="col-span-5 text-sm mb-4">{achievement.description}</div>
 							</li>
@@ -93,7 +93,7 @@
 			</Hideable>
 		</section>
 	</div>
-	<div class="col-span-12 md:col-start-1 md:col-end-10 md:px-4">
+	<div class="col-span-12 sm:col-start-1 sm:col-end-10 sm:px-4">
 		<section>
 			<Hideable>
 				<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
@@ -207,7 +207,7 @@
 		}
 
 		ul {
-			@apply pl-6;
+			/* @apply pl-6; */
 		}
 
 		section {
