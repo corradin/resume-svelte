@@ -13,6 +13,7 @@
 		intro = {} as IProfileResp['intro'],
 		projects = [],
 		achievements = [],
+		passions = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
@@ -67,7 +68,7 @@
 					{#each achievements as achievement}
 						<Hideable>
 							<li class="list-none grid grid-cols-6">
-								<Icon class="mt-1 row-span-2" icon="healthicons:i-training-class" width="1.5rem" />
+								<Icon class="mt-1 row-span-2" icon={achievement.icon || ''} width="1.5rem" />
 								<div class="font-bold mb-2 col-span-5">{achievement.title}</div>
 								<div class="col-span-5 text-sm mb-4">{achievement.description}</div>
 							</li>
@@ -86,6 +87,23 @@
 							<li class="list-none">
 								<div class="font-bold mb-2">{tech.section}</div>
 								<div class="text-sm mb-4">{tech.details}</div>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+		<section>
+			<Hideable>
+				<h2 class="md:text-2xl print:text-2xl my-2 uppercase text-left">Achievements</h2>
+				<hr />
+				<ul class="text-left">
+					{#each passions as passion}
+						<Hideable>
+							<li class="list-none grid grid-cols-6">
+								<Icon class="mt-1 row-span-2" icon={passion.icon || ''} width="1.5rem" />
+								<div class="font-bold mb-2 col-span-5">{passion.title}</div>
+								<div class="col-span-5 text-sm mb-4">{passion.description}</div>
 							</li>
 						</Hideable>
 					{/each}
