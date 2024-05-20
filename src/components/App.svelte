@@ -115,14 +115,14 @@
 	<div class="col-span-12 sm:col-start-1 sm:col-end-10 sm:px-4">
 		<section>
 			<Hideable>
-				<h2 class="text-2xl print:text-4xl uppercase text-left">Summary</h2>
+				<h2 class="text-2xl uppercase text-left">Summary</h2>
 				<hr />
-				<p class="text-left">{summary}</p>
+				<p class="text-left print:text-xs">{summary}</p>
 			</Hideable>
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-2xl print:text-4xl uppercase text-left">Experience</h2>
+				<h2 class="text-2xl uppercase text-left">Experience</h2>
 				<hr />
 
 				{#each workExperiences as exp}
@@ -220,9 +220,9 @@
 	}
 
 	@media print {
-		* {
+		/* * {
 			@apply text-xs;
-		}
+		} */
 
 		:global(.print-only) {
 			display: inherit;

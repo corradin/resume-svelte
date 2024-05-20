@@ -34,7 +34,7 @@
 				<div class="inline align-text-top">{location}</div>
 			</div>
 		</div>
-		<ul class="text-left list-disc pl-8 print:pl-6">
+		<ul class="text-left list-disc pl-8 print:pl-6 print:text-xs">
 			{#each details as detail}
 				<Hideable>
 					<li>
