@@ -11,6 +11,7 @@
 	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
 	$: ({
 		intro = {} as IProfileResp['intro'],
+		summary = '',
 		projects = [],
 		achievements = [],
 		passions = [],
@@ -43,7 +44,7 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="grid grid-cols-12 text-center m-0  md:p-4 md:m-8 xl:mx-auto max-w-screen-xl">
+<main class="grid grid-cols-12 text-center gap-y-4 md:p-4 md:m-8 xl:mx-auto max-w-screen-xl">
 	<div class="col-span-12 sm:row-start-1 sm:col-start-1 sm:col-end-10 sm:px-4">
 		<Intro {...intro} />
 	</div>
@@ -112,6 +113,13 @@
 		</section>
 	</div>
 	<div class="col-span-12 sm:col-start-1 sm:col-end-10 sm:px-4">
+		<section>
+			<Hideable>
+				<h2 class="text-2xl print:text-4xl uppercase text-left">Summary</h2>
+				<hr />
+				<p class="text-left">{summary}</p>
+			</Hideable>
+		</section>
 		<section>
 			<Hideable>
 				<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
