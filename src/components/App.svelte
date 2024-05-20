@@ -95,7 +95,7 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="md:text-2xl print:text-2xl my-2 uppercase text-left">Achievements</h2>
+				<h2 class="md:text-2xl print:text-2xl my-2 uppercase text-left">Passions</h2>
 				<hr />
 				<ul class="text-left">
 					{#each passions as passion}
