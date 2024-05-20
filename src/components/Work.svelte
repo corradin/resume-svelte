@@ -11,12 +11,12 @@
 
 <div class="work-experience">
 	<Hideable>
-		<div class="flex font-bold mb-2 print:mb-1">
-			<div class="flex-1 text-left">{position}</div>
-			<div class="flex-1 text-right">{years.join('-')}</div>
+		<div class="flex mb-2 print:mb-1">
+			<div class="flex-1 text-left text-lg font-bold">{position}</div>
+			<div class="flex-1 text-right">{years.join(' - ')}</div>
 		</div>
-		<div class="flex font-bold mb-2 print:mb-1">
-			<a href={url} target="_blank" rel="noreferrer">{company}</a>
+		<div class="flex mb-2 print:mb-1">
+			<a class="font-bold text-teal-500 underline print:no-underline" href={url} target="_blank" rel="noreferrer">{company}</a>
 			<div class="flex-1 text-right">{location}</div>
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
@@ -34,10 +34,6 @@
 <style lang="postcss">
 	.work-experience {
 		@apply my-4;
-	}
-
-	a {
-		text-decoration: underline;
 	}
 
 	@media print {
