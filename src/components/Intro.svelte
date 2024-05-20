@@ -23,10 +23,12 @@
 </h2>
 
 <div class="flex flex-wrap justify-between">
+	{#if phone}
 	<div class="mr-2">
 		<Icon class="inline self-center" icon="ic:baseline-phone" width="1rem" />
 		<a href={`tel:${phone}`}>{phone}</a>
 	</div>
+	{/if}
 	<div class="mr-2">
 		<Icon class="inline self-center" icon="ic:baseline-location-on" width="1rem" />
 		{location}
