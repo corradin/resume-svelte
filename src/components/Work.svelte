@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hideable from './Hideable.svelte';
+	import Icon from '@iconify/svelte';
 
 	export let position: string = '';
 	export let company: string = '';
@@ -16,8 +17,16 @@
 			<div class="flex-1 text-right">{years.join(' - ')}</div>
 		</div>
 		<div class="flex mb-2 print:mb-1">
-			<a class="font-bold text-teal-500 underline print:no-underline" href={url} target="_blank" rel="noreferrer">{company}</a>
-			<div class="flex-1 text-right">{location}</div>
+			<a
+				class="font-bold text-teal-500 underline print:no-underline"
+				href={url}
+				target="_blank"
+				rel="noreferrer">{company}</a
+			>
+			<div class="flex-1 text-right">
+				<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
+				<div class="inline align-text-top">{location}</div>
+			</div>
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
 			{#each details as detail}

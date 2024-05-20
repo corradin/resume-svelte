@@ -31,7 +31,7 @@
 	{/if}
 	<div class="mr-2">
 		<Icon class="inline self-center" icon="ic:baseline-location-on" width="1rem" />
-		{location}
+		<div class="inline align-text-top">{location}</div>
 	</div>
 	<div class="mr-2">
 		<Icon class="inline self-center" icon="ic:baseline-email" width="1rem" />
