@@ -5,6 +5,7 @@
 	export let company: string = '';
 	export let url: string = '';
 	export let years: string[] = [];
+	export let location: string = '';
 	export let details: string[] = [];
 </script>
 
@@ -12,10 +13,11 @@
 	<Hideable>
 		<div class="flex font-bold mb-2 print:mb-1">
 			<div class="flex-1 text-left">{position}</div>
-			<div class="flex-0">
-				<a href={url} target="_blank" rel="noreferrer">{company}</a>
-			</div>
 			<div class="flex-1 text-right">{years.join('-')}</div>
+		</div>
+		<div class="flex font-bold mb-2 print:mb-1">
+			<a href={url} target="_blank" rel="noreferrer">{company}</a>
+			<div class="flex-1 text-right">{location}</div>
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
 			{#each details as detail}

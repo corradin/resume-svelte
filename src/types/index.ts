@@ -5,7 +5,7 @@ export interface IProfileResp {
 	achievements: Achievement[];
 	passions: Passion[];
 	technologies: ITechnology[];
-	workExperiences: IWorkExperience[];
+	workExperiences: WorkExperience[];
 	educations: IEducation[];
 	interests: string[];
 	resumeUrl: {
@@ -36,11 +36,12 @@ export interface ITechnology {
 	details: string;
 }
 
-export interface IWorkExperience {
+export type WorkExperience = {
 	position: string;
 	company: string;
 	url: string;
 	years: string[];
+	location: string;
 	details: string[];
 }
 
