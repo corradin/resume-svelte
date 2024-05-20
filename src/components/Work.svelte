@@ -14,7 +14,13 @@
 	<Hideable>
 		<div class="flex mb-2 print:mb-1">
 			<div class="flex-1 text-left text-lg font-bold">{position}</div>
-			<div class="flex-1 text-right">{years.join(' - ')}</div>
+			<div class="flex-1 text-right">
+				<Icon
+					class="inline self-center mr-1"
+					icon="bx:calendar"
+					width="1rem"
+				/><div class="inline align-text-top">{years.join(' - ')}</div>
+			</div>
 		</div>
 		<div class="flex mb-2 print:mb-1">
 			<a
