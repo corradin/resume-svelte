@@ -45,12 +45,65 @@
 
 <main class="grid grid-cols-12 text-center gap-y-4 md:p-4 md:m-8 xl:mx-auto max-w-screen-xl">
 	<div class="col-span-12 sm:row-start-1 sm:col-start-1 sm:col-end-10 sm:px-4">
-		<Intro {...intro} />
+		<Intro  {...intro} />
+
+		<section>
+			<Hideable>
+				<h2 class="text-2xl uppercase text-left">Summary</h2>
+				<hr />
+				<p class="text-left print:text-xs">{summary}</p>
+			</Hideable>
+		</section>
+		<section>
+			<Hideable>
+				<h2 class="text-2xl uppercase text-left">Experience</h2>
+				<hr />
+
+				{#each workExperiences as exp}
+					<Work {...exp} />
+				{/each}
+			</Hideable>
+		</section>
+		<section>
+			<Hideable>
+				<h2 class="text-2xl uppercase text-left">Education</h2>
+				<hr />
+
+				<ul class="text-left list-disc pl-8">
+					{#each educations as edu}
+						<Hideable>
+							<li>
+								<strong>{edu.head}</strong>, {edu.details}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+
+		<section>
+			<Hideable>
+				<h2 class="text-2xl uppercase text-left">Projects</h2>
+				<hr />
+
+				<ul class="text-left list-disc pl-8">
+					{#each projects as project}
+						<Hideable hide={project.hide}>
+							<li>
+								<strong>{project.name}</strong>
+								- {project.details}
+								<a href="https://{project.url}" target="_blank" rel="noreferrer"
+									><strong>{project.url}</strong></a
+								>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
 	</div>
 
-	<div
-		class="col-span-12 sm:row-span-2 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-indigo-800 sm:text-white"
-	>
+	<div class="col-span-12 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-indigo-800 sm:text-white">
 		<section>
 			<Hideable>
 				<img
@@ -101,66 +154,9 @@
 					{#each passions as passion}
 						<Hideable>
 							<li class="list-none flex flex-wrap gap-2">
-								<Icon class="mt-1" icon={passion.icon || ''}  />
+								<Icon class="mt-1" icon={passion.icon || ''} />
 								<div class="font-bold">{passion.title}</div>
 								<div class="text-sm mb-4">{passion.description}</div>
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
-	</div>
-	<div class="col-span-12 sm:col-start-1 sm:col-end-10 sm:px-4">
-		<section>
-			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Summary</h2>
-				<hr />
-				<p class="text-left print:text-xs">{summary}</p>
-			</Hideable>
-		</section>
-		<section>
-			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Experience</h2>
-				<hr />
-
-				{#each workExperiences as exp}
-					<Work {...exp} />
-				{/each}
-			</Hideable>
-		</section>
-		<section>
-			<Hideable>
-				<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
-				<hr />
-
-				<ul class="text-left list-disc pl-8">
-					{#each educations as edu}
-						<Hideable>
-							<li>
-								<strong>{edu.head}</strong>, {edu.details}
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
-
-
-		<section>
-			<Hideable>
-				<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
-				<hr />
-
-				<ul class="text-left list-disc pl-8">
-					{#each projects as project}
-						<Hideable hide={project.hide}>
-							<li>
-								<strong>{project.name}</strong>
-								- {project.details}
-								<a href="https://{project.url}" target="_blank" rel="noreferrer"
-									><strong>{project.url}</strong></a
-								>
 							</li>
 						</Hideable>
 					{/each}
@@ -219,7 +215,7 @@
 		}
 
 		section {
-			@apply my-2;
+			@apply my-4;
 		}
 
 		section hr {
