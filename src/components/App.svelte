@@ -18,7 +18,6 @@
 		technologies = [],
 		workExperiences = [],
 		educations = [],
-		interests = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
 
@@ -101,10 +100,10 @@
 				<ul class="text-left">
 					{#each passions as passion}
 						<Hideable>
-							<li class="list-none grid grid-cols-6">
-								<Icon class="mt-1 row-span-2" icon={passion.icon || ''} width="1.5rem" />
-								<div class="font-bold mb-2 col-span-5">{passion.title}</div>
-								<div class="col-span-5 text-sm mb-4">{passion.description}</div>
+							<li class="list-none flex flex-wrap gap-2">
+								<Icon class="mt-1" icon={passion.icon || ''}  />
+								<div class="font-bold">{passion.title}</div>
+								<div class="text-sm mb-4">{passion.description}</div>
 							</li>
 						</Hideable>
 					{/each}
@@ -162,23 +161,6 @@
 								<a href="https://{project.url}" target="_blank" rel="noreferrer"
 									><strong>{project.url}</strong></a
 								>
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
-
-		<section>
-			<Hideable>
-				<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
-				<hr />
-
-				<ul class="text-left list-disc pl-8">
-					{#each interests as interest}
-						<Hideable>
-							<li>
-								{interest}
 							</li>
 						</Hideable>
 					{/each}

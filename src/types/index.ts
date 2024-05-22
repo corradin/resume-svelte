@@ -7,7 +7,6 @@ export interface IProfileResp {
 	technologies: ITechnology[];
 	workExperiences: WorkExperience[];
 	educations: IEducation[];
-	interests: string[];
 	resumeUrl: {
 		sourceLink: string;
 		fullVersionLink: string;
