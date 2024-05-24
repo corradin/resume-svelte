@@ -8,7 +8,7 @@
 		"linkedin": "riccardo-corradin",
 		"location": "Amsterdam, Netherlands"
 	},
-	"summary": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget",
+	"summary": "When I went to school I struggled with math. I didn't know to prepare for the tests and get a good grade. When I asked my teacher how I could improve, he stated: \"Prepare for the tests by redoing only the exercises that you failed during class\". Since then, my love for solving complex problems increased and I never got a bad grade anymore.  During the start of my professional career, I accumulated a lot of knowledge, in the same way, by failing often and improving. I was able to get things done. During this time I was doing full-stack development while my interest in front-end development grew.  Later in my career, I realized that I wanted to be more like my teacher, giving back what I've learned and helping others grow. I do this, by listening to the developers' needs, helping them solve technical challenges in pairing sessions, facilitating knowledge-sharing meetings, improving their developer experience, and developing and hosting technical courses. I believe I'm at my best when I can combine solving technical challenges with helping other developers grow and I'm grateful for each day where I can do both.",
 	"projects": [
 		{
 			"name": "Resumette",
@@ -20,7 +20,7 @@
 	"technologies": [
 		{
 			"section": "Languages",
-			"details": "JavaScript, Node.js (strong). TypeScript"
+			"details": "JavaScript, Node.js, TypeScript"
 		},
 		{
 			"section": "Frameworks",
@@ -55,7 +55,11 @@
 			"years": ["2022", "Present"],
 			"location": "Amsterdam, NL",
 			"details": [
-				"[Measureable achievements go here]"
+				"Created a lead[insert role here] position assessment and conducted interviews with candidates",
+				"Led the front end architecure and guild meetings, making sure we had a clear agenda and that all members were able to participate",
+				"Led the CMS migration from a front end architectural perspective (routing, data fetching, rendering)",
+				"Decreased build time from 14 to 5 minutes by adding sharding and caching",
+				"Created the front end architecture for a chatbot"
 			]
 		}
 	],
@@ -68,7 +72,7 @@
 	"passions": [
 		{
 			"title": "Pizza baking",
-			"description": "Trying to create the perfect Napolitean style pizza",
+			"description": "Baking the perfect Napolitean style pizza",
 			"icon": "lucide:pizza"
 		},
 		{
