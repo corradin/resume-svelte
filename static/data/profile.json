@@ -47,13 +47,6 @@
 			"icon": "streamline:group-meeting-call"
 		}
 	],
-	"passions": [
-		{
-			"title": "Pizza making",
-			"description": "My personal quest to make the best pizza ever tasted",
-			"icon": "arcticons:telepizza"
-		}
-	],
 	"workExperiences": [
 		{
 			"position": "Front End Tech Lead",
