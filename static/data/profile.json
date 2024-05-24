@@ -1,6 +1,7 @@
 {
 	"intro": {
 		"name": "Riccardo Corradin",
+		"role": "Full-stack Developer",
 		"phone": "",
 		"email": "riccardo.corradin@live.com",
 		"github": "corradin",
@@ -36,12 +37,21 @@
 	],
 	"achievements": [
 		{
-			"title": "Educator test driven development",
-			"description": "Created and facilitated a full day test driven development training for ISAAC, Albert Heijn (2x), Allianz, RW Retail Solutions"
+			"title": "Host a training",
+			"description": "Hosted several trainings",
+			"icon": "healthicons:i-training-class"
 		},
 		{
-			"title": "Educator end to end testing with Playwright",
-			"description": "Created and facilitated a full day Playwright training for Rabobank, Swiss Q (2x), and open for public (2x)"
+			"title": "Led front end guild meetings",
+			"description": "Ensured each FE gathering had a clear agenda and that all members were able to participate",
+			"icon": "streamline:group-meeting-call"
+		}
+	],
+	"passions": [
+		{
+			"title": "Pizza making",
+			"description": "My personal quest to make the best pizza ever tasted",
+			"icon": "arcticons:telepizza"
 		}
 	],
 	"workExperiences": [
