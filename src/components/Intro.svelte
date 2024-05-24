@@ -61,4 +61,10 @@
 	a {
 		text-decoration: underline;
 	}
+
+	@media print {
+		a {
+			text-decoration: none;
+		}
+	}
 </style>

@@ -15,20 +15,12 @@
 		<div class="flex mb-2 print:mb-1">
 			<div class="flex-1 text-left text-lg font-bold">{position}</div>
 			<div class="flex-1 text-right">
-				<Icon
-					class="inline self-center mr-1"
-					icon="bx:calendar"
-					width="1rem"
-				/><div class="inline align-text-top">{years.join(' - ')}</div>
+				<Icon class="inline self-center mr-1" icon="bx:calendar" width="1rem" />
+				<div class="inline align-text-top">{years.join(' - ')}</div>
 			</div>
 		</div>
 		<div class="flex mb-2 print:mb-1">
-			<a
-				class="font-bold text-teal-500 underline print:no-underline"
-				href={url}
-				target="_blank"
-				rel="noreferrer">{company}</a
-			>
+			<a class="font-bold text-teal-500" href={url} target="_blank" rel="noreferrer">{company}</a>
 			<div class="flex-1 text-right">
 				<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
 				<div class="inline align-text-top">{location}</div>
@@ -51,9 +43,17 @@
 		@apply my-4;
 	}
 
+	a {
+		text-decoration: underline;
+	}
+
 	@media print {
 		.work-experience {
 			@apply my-1;
+		}
+		
+		a {
+			text-decoration: none;
 		}
 	}
 </style>
