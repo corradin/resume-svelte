@@ -22,7 +22,7 @@
 	{/if}
 </h2>
 
-<div class="flex flex-wrap justify-between">
+<div class="flex flex-wrap">
 	{#if phone}
 	<div class="mr-2">
 		<Icon class="inline self-center" icon="ic:baseline-phone" width="1rem" />
