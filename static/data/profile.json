@@ -59,7 +59,7 @@
 				"Led the front end architecure and guild meetings, making sure we had a clear agenda and that all members were able to participate",
 				"Led the CMS migration from a front end architectural perspective (routing, data fetching, rendering)",
 				"Decreased build time from 14 to 5 minutes by adding sharding and caching",
-				"Created the front end architecture for a chatbot"
+				"Designed the architecture for dealing with sensitive data in a chatbot"
 			]
 		}
 	],
