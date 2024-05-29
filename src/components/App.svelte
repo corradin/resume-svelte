@@ -141,8 +141,10 @@
 								<div class="font-bold mb-2">{tech.section}</div>
 								<ul class="mb-4">
 									{#each tech.details as skill}
-										<Hideable class="inline">
-											<li class="inline text-sm print:text-xs">
+										<Hideable class="inline-block">
+											<li
+												class="inline-block underline mb-4 mr-4 underline-offset-8 text-sm print:text-xs"
+											>
 												{skill}
 											</li>
 										</Hideable>
