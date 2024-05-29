@@ -32,19 +32,28 @@
 	"technologies": [
 		{
 			"section": "Languages",
-			"details": "JavaScript, TypeScript"
+			"details": ["JavaScript", "TypeScript"]
 		},
 		{
 			"section": "Frameworks",
-			"details": "React, NextJS, Svelte, TailwindCSS, Angular, Vue, Playwright"
+			"details": ["React", "NextJS", "Svelte", "TailwindCSS", "Angular", "Vue", "Playwright"]
 		},
 		{
 			"section": "Tools",
-			"details": "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, Zsh"
+			"details": ["Git", "Terraform", "Docker", "Kubernetes", "Helm", "ArgoCD", "Zsh"]
 		},
 		{
 			"section": "Other",
-			"details": "Node.js, AWS, GCP, Vercel, Github Actions, Jenkins, Azure DevOps, CloudFlare"
+			"details": [
+				"Node.js",
+				"AWS",
+				"GCP",
+				"Vercel",
+				"Github Actions",
+				"Jenkins",
+				"Azure DevOps",
+				"CloudFlare"
+			]
 		}
 	],
 	"achievements": [

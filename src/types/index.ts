@@ -4,7 +4,7 @@ export interface IProfileResp {
 	projects: IProject[];
 	achievements: Achievement[];
 	passions: Passion[];
-	technologies: ITechnology[];
+	technologies: Technology[];
 	workExperiences: WorkExperience[];
 	educations: IEducation[];
 	resumeUrl: {
@@ -30,10 +30,10 @@ export interface IProject {
 	hide: boolean;
 }
 
-export interface ITechnology {
+export type Technology = {
 	section: string;
-	details: string;
-}
+	details: string[];
+};
 
 export type WorkExperience = {
 	position: string;
@@ -42,7 +42,7 @@ export type WorkExperience = {
 	years: string[];
 	location: string;
 	details: string[];
-}
+};
 
 export interface IEducation {
 	head: string;

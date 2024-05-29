@@ -45,7 +45,7 @@
 
 <main class="grid grid-cols-12 text-center gap-y-4 md:p-4 md:m-8 xl:mx-auto max-w-screen-xl">
 	<div class="col-span-12 sm:row-start-1 sm:col-start-1 sm:col-end-10 sm:px-4">
-		<Intro  {...intro} />
+		<Intro {...intro} />
 
 		<section>
 			<Hideable>
@@ -139,7 +139,15 @@
 						<Hideable>
 							<li class="list-none">
 								<div class="font-bold mb-2">{tech.section}</div>
-								<div class="text-sm mb-4 print:text-xs">{tech.details}</div>
+								<ul class="mb-4">
+									{#each tech.details as skill}
+										<Hideable class="inline">
+											<li class="inline text-sm print:text-xs">
+												{skill}
+											</li>
+										</Hideable>
+									{/each}
+								</ul>
 							</li>
 						</Hideable>
 					{/each}
