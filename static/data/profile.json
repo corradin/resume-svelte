@@ -76,7 +76,7 @@
 			"years": ["2022", "Present"],
 			"location": "Amsterdam, NL",
 			"details": [
-				"Led the front end architecure and guild meetings, making sure we had a clear agenda and that all members were able to participate",
+				"Facilitated the front end architecture for 5 senior developers and guild meetings for 15 developers, making sure we had a clear agenda and that all members were able to participate",
 				"Decreased build time from 14 to 5 minutes by adding Jest sharding and npm caching",
 				"Led the CMS migration from a front end architectural perspective. I delivered input for the RFPS, implemented PoCs for 3 vendors, created an architecture for routing, data fetching, and rendering, and implemented features",
 				"Created an assessment for front end tech leads and conducted interviews with candidates",
@@ -89,8 +89,12 @@
 	],
 	"educations": [
 		{
-			"head": "Msc, Computer Science",
+			"head": "MSc, Computer Science",
 			"details": "VU Amsterdam, 2006-2008"
+		},
+		{
+			"head": "BSc, Computer Science",
+			"details": "University of Twente, 2002-2006"
 		}
 	],
 	"passions": [
