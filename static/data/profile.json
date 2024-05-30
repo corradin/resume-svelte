@@ -59,7 +59,7 @@
 	"achievements": [
 		{
 			"title": "Educator",
-			"description": "Developed and facilitated [X] TDD and [Y] End to end testing with Playwright courses",
+			"description": "Developed and facilitated 5 TDD and 5 End to end testing with Playwright courses",
 			"icon": "healthicons:i-training-class"
 		},
 		{
@@ -96,7 +96,7 @@
 	"passions": [
 		{
 			"title": "Pizza baking",
-			"description": "Baking the perfect Napolitean style pizza",
+			"description": "Hosting Napolitean style pizza parties at work and at home",
 			"icon": "lucide:pizza"
 		},
 		{
@@ -111,7 +111,7 @@
 		},
 		{
 			"title": "Video games",
-			"description": "Playing mostly on PC the less popular indie games",
+			"description": "Playing mostly on PC and organizing game nights at work",
 			"icon": "maki:gaming"
 		},
 		{
