@@ -78,12 +78,12 @@
 			"details": [
 				"Led the front end architecure and guild meetings, making sure we had a clear agenda and that all members were able to participate",
 				"Decreased build time from 14 to 5 minutes by adding Jest sharding and npm caching",
-				"Led the CMS migration from a front end architectural perspective. I delivered input for the RFPS, implemented PoCs for various vendors, created an architecture for routing, data fetching, and rendering, and implemented features",
+				"Led the CMS migration from a front end architectural perspective. I delivered input for the RFPS, implemented PoCs for 3 vendors, created an architecture for routing, data fetching, and rendering, and implemented features",
 				"Created an assessment for front end tech leads and conducted interviews with candidates",
 				"Implemented a sizing tool to reduce the return rate of clothing",
 				"Developed and released an Appshell to improve consistency across micro frontends",
 				"Prepared and helped front end developers build an AR demo for the innovation day",
-				"Designed the architecture for dealing with sensitive data in a chatbot"
+				"Designed an architecture for dealing with sensitive data in a chatbot"
 			]
 		}
 	],
