@@ -69,7 +69,7 @@
 				<h2 class="text-2xl uppercase text-left">Education</h2>
 				<hr />
 
-				<ul class="text-left list-disc pl-8">
+				<ul class="text-left list-disc pl-8 break-after-page">
 					{#each educations as edu}
 						<Hideable>
 							<li>
@@ -115,7 +115,7 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-xl my-2 uppercase text-left">Achievements</h2>
+				<h2 class="text-xl mt-2 uppercase text-left print:text-lg">Achievements</h2>
 				<hr />
 				<ul class="text-left">
 					{#each achievements as achievement}
@@ -132,18 +132,18 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-xl my-2 uppercase text-left">Tech Skills</h2>
+				<h2 class="text-xl mt-2 uppercase text-left print:text-lg">Tech Skills</h2>
 				<hr />
-				<ul class="text-left list-disc pl-1">
+				<ul class="text-left list-disc pl-1 break-after-page">
 					{#each technologies as tech}
 						<Hideable>
 							<li class="list-none">
-								<div class="font-bold mb-2">{tech.section}</div>
-								<ul class="mb-4">
+								<div class="font-bold">{tech.section}</div>
+								<ul class="mb-2">
 									{#each tech.details as skill}
 										<Hideable class="inline-block">
 											<li
-												class="inline-block underline mb-4 mr-4 underline-offset-8 text-sm print:text-xs"
+												class="inline-block underline mb-2 mr-2 underline-offset-8 text-sm print:text-xs"
 											>
 												{skill}
 											</li>
@@ -158,7 +158,7 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-xl my-2 uppercase text-left">Passions</h2>
+				<h2 class="text-xl mt-2 uppercase text-left print:text-lg">Passions</h2>
 				<hr />
 				<ul class="text-left">
 					{#each passions as passion}
