@@ -49,65 +49,38 @@
 		<Intro {...intro} />
 
 		<Section title="Summary"><p class="text-left print:text-xs">{summary}</p></Section>
-		<section>
-			<Hideable>
-				<h2
-					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
-				>
-					Experience
-				</h2>
-				<hr />
-
-				{#each workExperiences as exp}
-					<Work {...exp} />
+		<Section title="Experience">
+			{#each workExperiences as exp}
+				<Work {...exp} />
+			{/each}
+		</Section>
+		<Section title="Education">
+			<ul class="text-left list-disc pl-8 break-after-page">
+				{#each educations as education}
+					<Hideable>
+						<li>
+							<strong>{education.head}</strong>, {education.details}
+						</li>
+					</Hideable>
 				{/each}
-			</Hideable>
-		</section>
-		<section>
-			<Hideable>
-				<h2
-					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
-				>
-					Education
-				</h2>
-				<hr />
+			</ul>
+		</Section>
 
-				<ul class="text-left list-disc pl-8 break-after-page">
-					{#each educations as edu}
-						<Hideable>
-							<li>
-								<strong>{edu.head}</strong>, {edu.details}
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
-
-		<section>
-			<Hideable>
-				<h2
-					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
-				>
-					Projects
-				</h2>
-				<hr />
-
-				<ul class="text-left list-disc pl-8">
-					{#each projects as project}
-						<Hideable hide={project.hide}>
-							<li>
-								<strong>{project.name}</strong>
-								- {project.details}
-								<a href="https://{project.url}" target="_blank" rel="noreferrer"
-									><strong>{project.url}</strong></a
-								>
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
+		<Section title="Projects">
+			<ul class="text-left list-disc pl-8">
+				{#each projects as project}
+					<Hideable hide={project.hide}>
+						<li>
+							<strong>{project.name}</strong>
+							- {project.details}
+							<a href="https://{project.url}" target="_blank" rel="noreferrer"
+								><strong>{project.url}</strong></a
+							>
+						</li>
+					</Hideable>
+				{/each}
+			</ul>
+		</Section>
 	</div>
 
 	<div class="col-span-12 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-primary-700 sm:text-white">
