@@ -12,8 +12,8 @@
 	export let website: string = '';
 </script>
 
-<h2 class="text-4xl sm:text-2xl md:text-3xl lg:text-6xl text-left my-4">
-	<span class="uppercase">{name}</span>
+<h2 class="text-5xl text-left my-4">
+	<span>{name}</span>
 	{#if nickname}
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
 	{/if}
