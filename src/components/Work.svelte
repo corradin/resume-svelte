@@ -20,7 +20,8 @@
 			</div>
 		</div>
 		<div class="flex mb-2 print:mb-1">
-			<a class="font-bold text-teal-500" href={url} target="_blank" rel="noreferrer">{company}</a>
+			<a class="font-bold text-primary-500" href={url} target="_blank" rel="noreferrer">{company}</a
+			>
 			<div class="flex-1 text-right">
 				<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
 				<div class="inline align-text-top">{location}</div>
@@ -51,7 +52,7 @@
 		.work-experience {
 			@apply my-1;
 		}
-		
+
 		a {
 			text-decoration: none;
 		}

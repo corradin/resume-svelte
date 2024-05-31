@@ -103,7 +103,7 @@
 		</section>
 	</div>
 
-	<div class="col-span-12 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-indigo-800 sm:text-white">
+	<div class="col-span-12 sm:col-start-10 sm:col-end-13 sm:px-4 sm:bg-primary-700 sm:text-white">
 		<section>
 			<Hideable>
 				<img
