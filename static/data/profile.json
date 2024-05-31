@@ -77,6 +77,7 @@
 			"location": "Amsterdam, NL",
 			"details": [
 				"Facilitated the front end architecture for 5 senior developers and guild meetings for 15 developers, making sure we had a clear agenda and that all members were able to participate",
+				"Introduced ADRs and facilitated meetings to make decisions faster and more transparent",
 				"Decreased build time from 14 to 5 minutes by adding Jest sharding and npm caching",
 				"Led the CMS migration from a front end architectural perspective. I delivered input for the RFPS, implemented PoCs for 3 vendors, created an architecture for routing, data fetching, and rendering, and implemented features",
 				"Created an assessment for front end tech leads and conducted interviews with candidates",
