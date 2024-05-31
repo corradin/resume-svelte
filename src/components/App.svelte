@@ -5,6 +5,7 @@
 	import Icon from '@iconify/svelte';
 	import Intro from './Intro.svelte';
 	import Work from './Work.svelte';
+	import Section from './Section.svelte';
 
 	let profile: IProfileResp;
 
@@ -47,17 +48,7 @@
 	<div class="col-span-12 sm:row-start-1 sm:col-start-1 sm:col-end-10 sm:px-4">
 		<Intro {...intro} />
 
-		<section>
-			<Hideable>
-				<h2
-					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
-				>
-					Summary
-				</h2>
-				<hr />
-				<p class="text-left print:text-xs">{summary}</p>
-			</Hideable>
-		</section>
+		<Section title="Summary"><p class="text-left print:text-xs">{summary}</p></Section>
 		<section>
 			<Hideable>
 				<h2
