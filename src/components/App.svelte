@@ -49,14 +49,22 @@
 
 		<section>
 			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Summary</h2>
+				<h2
+					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
+				>
+					Summary
+				</h2>
 				<hr />
 				<p class="text-left print:text-xs">{summary}</p>
 			</Hideable>
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Experience</h2>
+				<h2
+					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
+				>
+					Experience
+				</h2>
 				<hr />
 
 				{#each workExperiences as exp}
@@ -66,7 +74,11 @@
 		</section>
 		<section>
 			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Education</h2>
+				<h2
+					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
+				>
+					Education
+				</h2>
 				<hr />
 
 				<ul class="text-left list-disc pl-8 break-after-page">
@@ -83,7 +95,11 @@
 
 		<section>
 			<Hideable>
-				<h2 class="text-2xl uppercase text-left">Projects</h2>
+				<h2
+					class="text-2xl uppercase text-left max-w-fit relative bg-secondary-700 before:absolute before:-skew-x-12 before:origin-bottom-left before:bg-secondary-700 before:w-full before:h-full before:-z-10"
+				>
+					Projects
+				</h2>
 				<hr />
 
 				<ul class="text-left list-disc pl-8">
