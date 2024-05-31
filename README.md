@@ -38,6 +38,11 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ## TODO
+
 [ ] Look at examples from [EhanceCV](https://app.enhancv.com/resume/new?example=template-elegant&color=008CFF,22405C&fromLanding=true) or this one: https://app.enhancv.com/resume/new?example=template-polished&color=1AB0B3,006666&fromLanding=true
 
 More [Tips](https://enhancv.com/resume-examples/software-engineer/#)
+
+## Colors
+
+Primary and secondary colors are generated with: https://www.tints.dev
