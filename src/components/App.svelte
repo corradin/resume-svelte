@@ -55,15 +55,29 @@
 			{/each}
 		</Section>
 		<Section title="Education">
-			<ul class="text-left list-disc pl-8 break-after-page">
-				{#each educations as education}
-					<Hideable>
-						<li>
-							<strong>{education.head}</strong>, {education.details}
-						</li>
-					</Hideable>
-				{/each}
-			</ul>
+			{#each educations as education}
+				<Hideable>
+					<div class="flex">
+						<div class="flex-1 text-left text-lg font-bold">{education.degree}</div>
+						<div class="flex-1 text-right">
+							<Icon class="inline self-center mr-1" icon="bx:calendar" width="1rem" />
+							<div class="inline align-text-top">{education.years.join(' - ')}</div>
+						</div>
+					</div>
+					<div class="flex mb-2 print:mb-1">
+						<a
+							class="font-bold text-primary-500"
+							href={education.url}
+							target="_blank"
+							rel="noreferrer">{education.institution}</a
+						>
+						<div class="flex-1 text-right">
+							<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
+							<div class="inline align-text-top">{education.location}</div>
+						</div>
+					</div>
+				</Hideable>
+			{/each}
 		</Section>
 
 		<Section title="Projects">

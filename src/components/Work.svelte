@@ -12,7 +12,7 @@
 
 <div class="work-experience">
 	<Hideable>
-		<div class="flex mb-2 print:mb-1">
+		<div class="flex">
 			<div class="flex-1 text-left text-lg font-bold">{position}</div>
 			<div class="flex-1 text-right">
 				<Icon class="inline self-center mr-1" icon="bx:calendar" width="1rem" />

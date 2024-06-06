@@ -6,12 +6,13 @@ export interface IProfileResp {
 	passions: Passion[];
 	technologies: Technology[];
 	workExperiences: WorkExperience[];
-	educations: IEducation[];
+	educations: Education[];
 	resumeUrl: {
 		sourceLink: string;
 		fullVersionLink: string;
 	};
 }
+
 export interface IIntro {
 	name: string;
 	nickname: string;
@@ -44,10 +45,13 @@ export type WorkExperience = {
 	details: string[];
 };
 
-export interface IEducation {
-	head: string;
-	details: string;
-}
+export type Education = {
+	degree: string;
+	institution: string;
+	url: string;
+	location: string;
+	years: string[];
+};
 
 export type Achievement = {
 	title: string;

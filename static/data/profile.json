@@ -90,12 +90,18 @@
 	],
 	"educations": [
 		{
-			"head": "MSc, Computer Science",
-			"details": "VU Amsterdam, 2006-2008"
+			"degree": "MSc, Computer Science",
+			"institution": "Vrije Universtiteit",
+			"url": "https://www.vu.nl",
+			"location": "Amsterdam, NL",
+			"years": ["2006", "2008"]
 		},
 		{
-			"head": "BSc, Computer Science",
-			"details": "University of Twente, 2002-2006"
+			"degree": "BSc, Computer Science",
+			"institution": "University of Twente",
+			"url": "https://www.utwente.nl",
+			"location": "Enschede, NL",
+			"years": ["2002", "2006"]
 		}
 	],
 	"passions": [
