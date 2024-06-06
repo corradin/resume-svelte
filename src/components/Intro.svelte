@@ -33,10 +33,12 @@
 		<Icon class="inline self-center text-primary-500" icon="ic:baseline-location-on" width="1rem" />
 		<div class="inline align-text-top">{location}</div>
 	</div>
-	<div class="mr-2">
-		<Icon class="inline self-center text-primary-500" icon="ic:baseline-email" width="1rem" />
-		<a href={`mailto:${email}`}>{email}</a>
-	</div>
+	{#if email}
+		<div class="mr-2">
+			<Icon class="inline self-center text-primary-500" icon="ic:baseline-email" width="1rem" />
+			<a href={`mailto:${email}`}>{email}</a>
+		</div>
+	{/if}
 
 	<div class="mr-2">
 		<Icon class="inline self-center text-primary-500" icon="mdi:github" width="1rem" />
