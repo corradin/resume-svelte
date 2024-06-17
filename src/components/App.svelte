@@ -25,8 +25,14 @@
 	onMount(async () => (profile = await fetchResumeProfile()));
 
 	async function fetchResumeProfile() {
-		const resp = await fetch('/data/profile.json');
-		return await resp.json();
+		const profileData = await (await fetch('/data/profile.json')).json();
+		const profilePrivateData = await (await fetch('/data/profile_private.json')).json();
+
+		return {
+			...profileData,
+			...profilePrivateData,
+			intro: { ...profileData.intro, ...profilePrivateData.intro }
+		};
 	}
 </script>
 

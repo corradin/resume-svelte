@@ -1,14 +1,10 @@
 {
 	"intro": {
 		"name": "Riccardo Corradin",
-		"role": "[Insert role here]",
-		"phone": "",
-		"email": "",
 		"github": "corradin",
-		"linkedin": "riccardo-corradin",
-		"location": "Amsterdam, Netherlands"
+		"linkedin": "riccardo-corradin"
 	},
-	"summary": "When I went to school I struggled with math. I didn't know to prepare for the tests and get a good grade. When I asked my teacher how I could improve, he stated: \"Prepare for the tests by redoing only the exercises that you failed during class\". Since then, my love for solving complex problems increased and I never got a bad grade anymore.  During the start of my professional career, I accumulated knowledge, in the same way, by failing often and improving. I was able to get things done. During this time I was doing full-stack development while my interest in front-end development grew.  Later in my career, I realized that I wanted to be more like my teacher, giving back what I've learned and helping others grow. I do this, by listening to the developers' needs, helping them solve technical challenges in pairing sessions, facilitating knowledge-sharing meetings, improving their developer experience, and developing and hosting technical courses. I believe I'm at my best when I can combine solving technical challenges with helping other developers grow and I'm grateful for each day where I can do both.",
+	"summary": "I am a hands-on web development lead with over 15 years of consultancy experience specializing in web applications. I consider myself strong in the areas of frontend development, CI/CD, web test, web performance, and web accessibility engineering. My diverse experience across various environments has sharpened my ability to quickly adapt to new technologies and collaborate effectively with new teams.",
 	"projects": [
 		{
 			"name": "End to end testing with playwright course",
@@ -68,26 +64,7 @@
 			"icon": "pepicons-pencil:people"
 		}
 	],
-	"workExperiences": [
-		{
-			"position": "Front End Tech Lead",
-			"company": "de Bijenkorf - Contract",
-			"url": "https://www.debijenkorf.nl",
-			"years": ["2022", "Present"],
-			"location": "Amsterdam, NL",
-			"details": [
-				"Facilitated the front end architecture for 5 senior developers and guild meetings for 15 developers, making sure we had a clear agenda and that all members were able to participate",
-				"Introduced ADRs and facilitated meetings to make decisions faster and more transparent",
-				"Decreased build time from 14 to 5 minutes by adding Jest sharding and npm caching",
-				"Led the CMS migration from a front end architectural perspective. I delivered input for the RFPS, implemented PoCs for 3 vendors, created an architecture for routing, data fetching, and rendering, and implemented features",
-				"Created an assessment for front end tech leads and conducted interviews with candidates",
-				"Implemented a sizing tool to reduce the return rate of clothing",
-				"Developed and released an Appshell to improve consistency across micro frontends",
-				"Prepared and helped front end developers build an AR demo for the innovation day",
-				"Designed an architecture for dealing with sensitive data in a chatbot"
-			]
-		}
-	],
+	"workExperiences": [],
 	"educations": [
 		{
 			"degree": "MSc, Computer Science",
