@@ -22,10 +22,12 @@
 		<div class="flex mb-2 print:mb-1">
 			<a class="font-bold text-primary-500" href={url} target="_blank" rel="noreferrer">{company}</a
 			>
-			<div class="flex-1 text-right">
-				<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
-				<div class="inline align-text-top">{location}</div>
-			</div>
+			{#if location}
+				<div class="flex-1 text-right">
+					<Icon class="inline self-center mr-1" icon="ic:baseline-location-on" width="1rem" />
+					<div class="inline align-text-top">{location}</div>
+				</div>
+			{/if}
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6 print:text-xs">
 			{#each details as detail}
