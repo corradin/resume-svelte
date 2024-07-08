@@ -1,13 +1,10 @@
 <script lang="ts">
 	import Hideable from './Hideable.svelte';
 	import Icon from '@iconify/svelte';
+	import type { WorkExperience } from '../types';
 
-	export let position: string = '';
-	export let company: string = '';
-	export let url: string = '';
-	export let years: string[] = [];
-	export let location: string = '';
-	export let details: string[] = [];
+	export let exp: WorkExperience;
+	const { position, company, url, years, location, details } = exp;
 </script>
 
 <div class="work-experience">
@@ -29,11 +26,19 @@
 				</div>
 			{/if}
 		</div>
-		<ul class="text-left list-disc pl-8 print:pl-6 print:text-xs">
+		<ul class="text-left print:text-xs">
 			{#each details as detail}
 				<Hideable>
 					<li>
-						{detail}
+						{#if detail.coreCompetency}
+							<span class="font-bold">{detail.coreCompetency}</span>
+						{/if}
+						<ul class="text-left list-disc pl-8 print:pl-6 print:text-xs">
+							<!-- <li class="font-bold">Leadership</li> -->
+							{#each detail.descriptions as description}
+								<li>{description}</li>
+							{/each}
+						</ul>
 					</li>
 				</Hideable>
 			{/each}

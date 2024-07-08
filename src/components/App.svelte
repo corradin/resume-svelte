@@ -57,7 +57,7 @@
 		<Section title="Summary"><p class="text-left print:text-xs">{summary}</p></Section>
 		<Section title="Experience">
 			{#each workExperiences as exp}
-				<Work {...exp} />
+				<Work {exp} />
 			{/each}
 		</Section>
 		<Section title="Education">
