@@ -42,7 +42,7 @@ export type WorkExperience = {
 	url: string;
 	years: string[];
 	location: string;
-	details: { coreCompetency: string; descriptions: string }[];
+	details: { coreCompetency?: string; descriptions: string }[];
 };
 
 export type Education = {
