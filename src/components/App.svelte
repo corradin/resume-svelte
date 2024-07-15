@@ -19,7 +19,7 @@
 		technologies = [],
 		workExperiences = [],
 		educations = [],
-		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
+		resumeUrl: { sourceLink = '' } = {}
 	} = profile || {});
 
 	onMount(async () => (profile = await fetchResumeProfile()));
