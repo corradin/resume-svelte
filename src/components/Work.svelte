@@ -33,7 +33,7 @@
 						{#if detail.coreCompetency}
 							<span class="font-bold">{detail.coreCompetency}</span>
 						{/if}
-						<ul class="text-left list-disc pl-8 print:pl-6 print:text-xs">
+						<ul class="text-left list-disc pl-8 pb-4 print:pl-6 print:text-xs">
 							<!-- <li class="font-bold">Leadership</li> -->
 							{#each detail.descriptions as description}
 								<li>{description}</li>
