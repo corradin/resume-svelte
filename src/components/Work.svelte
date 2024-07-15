@@ -4,10 +4,10 @@
 	import type { WorkExperience } from '../types';
 
 	export let exp: WorkExperience;
-	const { position, company, url, years, location, details } = exp;
+	const { position, company, url, years, location, details, breakAfter } = exp;
 </script>
 
-<div class="work-experience">
+<div class="work-experience {breakAfter ? 'break-after-page' : ''}">
 	<Hideable>
 		<div class="flex">
 			<div class="flex-1 text-left text-lg font-bold">{position}</div>
